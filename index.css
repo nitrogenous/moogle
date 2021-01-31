@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+* {
+  font-family: 'Roboto', cursive;
+}
+
+body {
+  color: #EEEBE8;
+  text-align: center;
+  background-color: #333745;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .title {
+  margin: 25px;
+  font-size: 42px;
+  color: #D55F8F;
+  font-family: 'Pacifico', cursive !important;
+}
+
+.header .search-area {
+  display: flex;
+}
+
+.header .search-area input {
+  margin: 0px;
+  height: 35px;
+  width: 250px;
+  outline: none;
+  background: none;
+  color: #D5CCCC;
+  padding: 7.5px 10px;
+  border: 2px solid #D55F8F;
+  border-top-left-radius: 12.5px;
+  border-bottom-left-radius: 12.5px;
+  transition: 0.2s ease;
+}
+
+.header .search-area input:focus {
+  border: 2px solid #97E5EF; 
+  transition: 0.2s ease;
+}
+
+.header .search-area button {
+  margin: 0px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: #333745;
+  font-weight: bold;
+  padding: 10px 25px;
+  background-color: #D55F8F;
+  border-top-right-radius: 12.5px;
+  border-bottom-right-radius: 12.5px;
+  transition: 0.2s ease;
+}
+
+.header .search-area button:hover {
+  cursor: pointer;
+  background-color: #97E5EF;
+  transition: 0.2s ease;
+}
+
+.movie-showcase {
+  margin: 50px 0;
+  padding: 10px;
+  width: 325px;
+  color: #333745;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #D5CCCC;
+}
+
+.movie-showcase #moviePoster {
+  margin: 5px;  
+  border-radius: 2.5px;
+}
+
+.movie-showcase #movieName {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.movie-showcase #moviePlot {
+  margin: 5px;
+  font-size: 14px;
+}
